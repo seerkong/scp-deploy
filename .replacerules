@@ -1,0 +1,16 @@
+---
+    - ".htaccess":
+        - "codeigniter2": "demo"
+    - "index.php":
+        - "define('ENVIRONMENT', 'development')" : "define('ENVIRONMENT', 'production')"
+        - "$system_path = 'system'" : "$system_path = '../../system'"
+    - "application/config/config.php":
+        - "http://127.0.0.1/php/demo/": "http://www.xxx.com/demo/"
+    - "application/views":
+        - "http://localhost/php/demo": "/demo"
+        - "/php/demo": "/demo"
+    - "application/controller":
+        - "http://localhost/php/demo": "/demo"
+        - "$this->firephp": "//$this->firephp"
+    - "application/models":
+        - "$this->firephp": "//$this->firephp"
